@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.topitem{
+	color: black;
+	background-color: orange;
+	display: block;
+	margin-left: 
+}
+
+.topitem div{
+position: fixed;
+background-color: red;
+
+}
+
+
+
+.flex-container {
+  display: flex;
+  background-color: pink;
+}
+
+.flex-container div {
+  background-color: white;
+  margin: 10px;
+  padding:20px;
+  font-size: 16px;
+}
+
+
+.flex-container2 {
+  display: flex;
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container2 div {
+  background-color: white;
+  margin: 10px;
+  padding:20px;
+  font-size: 16px;
+
+}
+
+.flex-container3 {
+  display: flex;
+  background-color: orange;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-container3 div {
+	width: 300px;
+	height: 300px;
+  background-color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 16px;
+}
+
+.flex-container4 {
+  display: flex;
+  background-color: purple;
+}
+
+.flex-container4 div {
+  background-color: white;
+  color: black;
+	width: 50;
+  margin: 10px;
+  text-align: center;
+  
+  font-size: 16px;
+}
+
+.sticky {
+     position: fixed;
+     top: 0;
+  }
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="topitem">
+	<div class="topThing">
+	This should always stay at the top...look into the different CSS position options (the position
+will not be set to flex for this div). This should have a link in it of: To Top. When clicked, it
+should take you to the top of this document. To link to a section on a page, give an html
+element an ID
+<a href="#top">To Top</a>
+	</div>
+</div>
+
+
+<div class="flex-container">
+  <div id="top">These two flex items should always be in
+the same row together (even if you resize
+the window) but they should fill the
+horizontal space...any extra space shown
+here is just a margin. (You should set a
+margin so that you can see the
+background...you choose how big).</div>
+<div>
+The height of this container should be
+fixed (you can pick a reasonable
+height...might I recommend 400
+pixels?). These two items should have
+equal widths at all times. Don&#39;t put a
+lot of text in them...they can be
+sparsely populated.</div>
+</div>
+
+
+<div class="flex-container2">
+  <div>This is a new flex item in its
+own flex container. This
+item should be perfectly
+centered and stay that way
+even on a resize. 	</div>
+  </div>
+
+
+<div class="flex-container3">
+  <div>
+  <img src="maunu.jpg" width="100" height="100">
+  </div>
+
+  <div>
+<img src="maunu.jpg" width="100" height="100">
+  </div>
+
+  <div>
+<img src="maunu.jpg" width="100" height="100">
+  </div>
+
+  <div>
+<img src="maunu.jpg" width="100" height="100">
+  </div>
+
+  <div>
+<img src="maunu.jpg" width="100" height="100">
+  </div>
+
+  <div>
+<img src="maunu.jpg" width="100" height="100">
+  </div>
+
+  <div>
+<img src="maunu.jpg" width="100" height="100">
+  </div>
+
+  <div>
+<img src="maunu.jpg" width="100" height="100">
+  </div>
+
+</div>
+
+<div class="flex-container4">
+	<div style="flex-shrink: 0">
+These two
+items should
+fill the space
+vertically
+but this first
+one has a
+fixed
+horizontal
+size that
+doesn&#39;t grow
+</div>
+
+<div>but this one should have a horizontal size that is flexible and grows to
+fill the space. Give the other one a small width (something like 300px).
+This one shouldn&#39;t have a fixed width (because it should grow). 	</div>
+  </div>
+
+
+
+</body>
+</html>
+
